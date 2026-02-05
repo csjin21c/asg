@@ -1,0 +1,42 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastAPI x Nginx EC2</title>
+    <style>
+      /* 1. 화면 전체를 채우도록 설정 */
+      body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          display: flex;
+          /* 2. 가로, 세로 정중앙 정렬 (Flexbox) */
+          justify-content: center;
+          align-items: center;
+          background-color: #f0f2f5;
+          font-family: Arial, sans-serif;
+      }
+
+      /* 3. 중앙에 위치할 박스 스타일 */
+      .center-box {
+          padding: 2rem;
+          background-white;
+          background-color: white;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          border-radius: 12px;
+          text-align: center;
+      }
+
+      h1 { color: #3b82f6; }
+      p { color: #4b5563; }
+    </style>
+  </head>
+  <body>
+    <div class="center-box">
+      <h1>Nginx ECR과 S3를 활용한 배포!</h1>
+      <img src="images/nginx.png" alt="Nginx Logo" />
+      <p>이 화면은 Nginx가 직접 보여주는 정적 파일입니다.</p>
+      <p>API 요청은 <strong>/api</strong> 경로를 사용하세요.</p>
+    </div>
+  </body>
+</html>
